@@ -12,7 +12,7 @@ pipeline {
     
     stage ('Check secrets') {
       steps {
-      sh 'trufflehog3 https://github.com/chaudharysurya14/Webgoat_devsecops1.git -f json -o truffelhog_output.json || true'
+      sh 'trufflehog3 https://github.com/chaudharysurya14/webgoat_devsecops.git -f json -o truffelhog_output.json || true'
       }
     }
     
