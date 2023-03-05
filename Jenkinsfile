@@ -16,7 +16,7 @@ pipeline {
       }
     }
     
-    stage ('Software composition analysis') {
+    stage ('Static analysis') {
             steps {
                 dependencyCheck additionalArguments: ''' 
                     -o "./" 
